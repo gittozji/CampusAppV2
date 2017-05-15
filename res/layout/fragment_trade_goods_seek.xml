@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 商品搜索布局 -->
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"   
+	android:layout_width="match_parent"
+	android:padding="16dp"
+	android:orientation="vertical"
+    android:focusable="true"
+	android:focusableInTouchMode="true"
+	android:background="@color/parens_back" >
+	<requestFocus />
+    <EditText
+	    android:id="@id/text"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:singleLine="true"
+	    android:background="@null"
+	    android:textColorHint="@color/gray"
+	    android:textSize="14sp"
+	    android:hint="输入关键词"
+	    android:lineSpacingMultiplier="1.1"
+	    />
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="#33000000"
+	    />
+    <RelativeLayout 
+	    android:id="@id/lay_classify"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:clickable="true"
+	    android:background="@drawable/dynamic_trade_menu_item"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:text="分类:"
+	        />
+	    <TextView 
+	        android:id="@id/classify"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="100dp"
+	        android:textColor="@color/secondary_text"
+	        android:text="其他"
+	        />
+	    <ImageView 
+	        android:layout_width="10dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/arrow"
+	        />
+	</RelativeLayout>
+	
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="#33000000"
+	    />
+    
+	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@id/button1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/job"
+            android:text="商品搜索"
+            android:background="@drawable/dynamic_text_seek_back" />
+        
+        <Button
+            android:id="@id/button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/individuation"
+            android:text="求购搜索"
+            android:background="@drawable/dynamic_text_seek_back" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        >
+	    <Button
+		    android:id="@id/button3"
+		    android:layout_width="0dp"
+		    android:layout_height="50dp"
+		    android:layout_weight="1"
+		    android:text="全部商品信息"
+		    android:textColor="@color/said"
+		    android:background="@drawable/dynamic_text_seek_back" />
+	    
+	    <Button
+		    android:id="@id/button4"
+		    android:layout_width="0dp"
+		    android:layout_height="50dp"
+		    android:layout_weight="1"
+		    android:text="全部求购信息"
+		    android:textColor="@color/notice"
+		    android:background="@drawable/dynamic_text_seek_back" />
+    </LinearLayout>
+</LinearLayout>

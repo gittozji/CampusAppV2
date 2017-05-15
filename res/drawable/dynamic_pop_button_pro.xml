@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Menu中seek按钮背景 -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+		<shape>    
+		    <solid android:color="#bbeeeeee" />    
+		    	<corners 
+		        	android:radius="100dp" />    
+		</shape>
+	</item>
+    <item android:state_pressed="false" >
+    	<shape xmlns:android="http://schemas.android.com/apk/res/android">    
+		    <solid android:color="#22000000" />    
+			    <corners 
+			        android:radius="100dp" />    
+		</shape>
+	</item>
+</selector>

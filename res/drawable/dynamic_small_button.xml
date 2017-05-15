@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 小按钮按钮背景，例如dialog中的按钮 -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" >
+        <shape>
+            <solid android:color="#00000000" />
+			<corners android:radius="2dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true" >
+        <shape>
+            <solid android:color="@color/translucence" />
+			<corners android:radius="2dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 回答问题item -->
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/layout_menu"  
+	android:layout_height="wrap_content"   
+	android:layout_width="match_parent"
+    >
+	<RelativeLayout   
+		android:layout_height="wrap_content"   
+		android:layout_width="match_parent"
+		android:paddingLeft="20dp"
+		android:paddingRight="10dp"
+		android:layout_marginLeft="6dp"
+		android:layout_marginRight="6dp"
+		android:background="@drawable/half_card_back"
+		>  
+		<RelativeLayout 
+		    android:id="@id/layout_menu"
+		    android:layout_height="wrap_content"   
+			android:layout_width="match_parent"
+			android:layout_toLeftOf="@id/one"
+			>
+		    <TextView 
+		        android:id="@id/content"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:minHeight="40dp"
+		        android:textSize="15sp"
+		        android:lineSpacingMultiplier="1.1"
+		        />
+		    <TextView 
+		        android:id="@id/time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@id/content"
+		        android:layout_marginTop="5dp"
+		        android:textColor="@color/gray"
+			    android:textSize="12sp"
+		        android:text="2015-12-12 12:12:12"
+		        />
+		</RelativeLayout>
+		<RelativeLayout
+		    android:id="@id/one"
+		    android:layout_height="wrap_content"   
+			android:layout_width="45dp"
+			android:layout_alignParentRight="true"
+		    >
+			<com.zjcql.rebuildview.CircleImageView
+			   	android:id="@id/icon"
+			    android:layout_width="35dp"
+			    android:layout_height="35dp"
+			    android:layout_centerHorizontal="true"
+			    android:layout_alignParentTop="true"
+			    android:src="@drawable/icon"
+	          	app:border_width="1dp"
+	          	app:border_color="@color/icon_border"
+			    />
+			<TextView 
+		        android:id="@id/pop"
+		        android:layout_width="wrap_content"
+		        android:minWidth="30dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center"
+		        android:layout_below="@id/icon"
+		        android:layout_marginTop="5dp"
+		        android:text="0"
+		        android:textSize="14sp"
+		        android:textColor="@color/primary"
+		        android:background="@drawable/dynamic_pop_button"
+		        />
+	
+		</RelativeLayout>
+	</RelativeLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginLeft="14dp"
+	    android:layout_marginRight="70dp"
+	    android:background="#33000000"
+	    />
+</RelativeLayout>

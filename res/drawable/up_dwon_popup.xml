@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- popup_layout_up_and_down边框 -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid 
+        android:color="#ffffff"
+        />
+    <stroke 
+        android:width="2px"
+        android:color="#22000000"
+        />
+</shape>

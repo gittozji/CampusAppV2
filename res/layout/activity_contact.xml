@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 社交圈界面 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  	android:background="@color/white"
+    >
+    <!-- 顶部导航栏 -->
+    <RelativeLayout
+	    android:id="@id/bar"
+	    android:layout_height="50dp"
+	    android:layout_width="match_parent"
+	    android:background="@color/primary"
+	    >
+	    <RelativeLayout
+	        android:id="@id/back"
+	        android:layout_width="50dp" 
+	        android:layout_height="50dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/dynamic_small_button"
+	        >
+	        <ImageView
+		        android:layout_width="18dp"
+		        android:layout_height="18dp"
+		        android:layout_centerInParent="true"
+		        android:background="@drawable/arrow_left" />
+	    </RelativeLayout>
+	    
+	    <TextView 
+	        android:id="@id/bar_title"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+     	    android:layout_toRightOf="@id/back"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="5dp"
+	        android:textColor="@color/white"
+	        android:textSize="20sp"
+	        android:text="社交圈" />
+	    <RelativeLayout
+	        android:id="@id/add"
+	        android:layout_width="50dp" 
+	        android:layout_height="50dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/dynamic_small_button"
+	        >
+	        <ImageView
+		        android:layout_width="18dp"
+		        android:layout_height="18dp"
+		        android:layout_centerInParent="true"
+		        android:background="@drawable/add" />
+	    </RelativeLayout>
+	</RelativeLayout>
+	<android.support.v4.view.ViewPager
+        android:id="@id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+              
+        <!-- 这里可以把PagerTabStrip替换成PagerTitleStrip看看效果有何不同 -->
+        <android.support.v4.view.PagerTabStrip
+            android:id="@id/pagertab"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:background="@color/primary"  
+            />  
+         
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

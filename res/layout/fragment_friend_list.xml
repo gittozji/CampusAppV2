@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 社交圈中好友列表界面 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  	android:background="@color/parens_back"
+    >
+    <RelativeLayout 
+        android:id="@id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView 
+            android:id="@id/image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/new_friends_icon"
+            />
+        <TextView 
+            android:id="@id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image"
+            android:layout_centerVertical="true"
+            android:textColor="@color/primary_text"
+            android:text="新好友"
+            android:textSize="18sp"
+            />
+        <ImageView 
+            android:id="@id/has_new"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/msg_tips"
+            android:layout_toRightOf="@id/text"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@id/listview" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     	/>
+</LinearLayout>

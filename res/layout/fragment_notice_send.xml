@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 公告发布布局 -->
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/parens_back"
+   	>
+	<ScrollView   
+		android:layout_height="match_parent"   
+		android:layout_width="match_parent"
+	    >
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        >
+		    <!-- 下面布局可看成是一个CardView -->
+		    <!-- 对于cardback，上、左、右边距为3，下边距需要设置但无关紧要时为饱和 -->
+			<RelativeLayout 
+			    android:id="@id/lay_bottom"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+		    	android:padding="2dp"
+		        android:layout_marginLeft="6dp"
+		        android:layout_marginTop="4dp"
+		        android:layout_marginRight="6dp"
+		       	android:background="@drawable/cardback_pro"
+			    >
+			    <!-- CardView的实际使用层 -->
+				<LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical"
+				    >
+				    <RelativeLayout 
+				        android:layout_width="match_parent"
+				        android:layout_height="160dp"
+				        >
+					    <ImageView 
+					        android:id="@id/image"
+					        android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+					        android:scaleType="centerCrop"
+					        android:src="@drawable/user_back_small"
+					        />
+					    <EditText 
+					        android:id="@id/title"
+					        android:layout_width="match_parent"
+					    	android:layout_height="wrap_content"
+					    	android:layout_alignParentBottom="true"
+					    	android:layout_margin="16dp"
+					    	android:hint="在此输入标题"
+					    	android:textColor="@color/white"
+					    	android:textSize="18sp"
+					    	android:background="@null"
+					    	android:lineSpacingMultiplier="1.1"
+					        />
+				    </RelativeLayout>
+					<EditText 
+					    android:id="@id/content"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_margin="16dp"
+					    android:hint="在此输入公告内容。。。"		
+					    android:textSize="14sp"	
+					    android:background="@null"		  
+					    android:lineSpacingMultiplier="1.1"  
+					    />
+				</LinearLayout>
+			</RelativeLayout>
+			<Button 
+			    android:id="@id/send"
+			    android:layout_width="150dp"
+			    android:layout_height="50dp"
+			    android:layout_below="@id/lay_bottom"
+			    android:layout_marginTop="8dp"
+			    android:layout_centerHorizontal="true"
+			    android:background="@drawable/dynamic_log_button"
+			    android:textColor="@color/white"
+			    android:text="发送"
+			    />
+			<TextView 
+			    android:id="@id/select"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/send"
+			    android:layout_margin="8dp"
+			    android:text="选择标题颜色"
+			    android:textSize="12sp"
+			    android:textColor="@color/secondary_text"
+			    android:background="@drawable/dynamic_small_button"
+			    />
+		</RelativeLayout>
+	</ScrollView>
+</LinearLayout>

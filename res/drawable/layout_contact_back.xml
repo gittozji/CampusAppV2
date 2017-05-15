@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- contact按钮的圆角背景 -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/contact"/>
+	<corners 
+	    android:radius="2dp" />
+</shape>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 通知栏的通知卡片布局 -->
+
+<RelativeLayout   
+	xmlns:android="http://schemas.android.com/apk/res/android"    
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/parens_back"
+	>  
+	<!-- 下面布局可看成是一个CardView -->
+	<!-- 对于cardback，上、左、右边距为3，下边距需要设置但无关紧要时为饱和 -->
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+    	android:padding="2dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="6dp"
+       	android:background="@drawable/cardback_pro"
+	    >
+	    <!-- CardView的实际使用层 -->
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    >
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="160dp"
+		        >
+			    <ImageView 
+			        android:id="@id/image"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:scaleType="centerCrop"
+			        android:background="@drawable/user_back_small"
+			        />
+			    <TextView 
+			        android:id="@id/title"
+			        android:layout_width="match_parent"
+			    	android:layout_height="wrap_content"
+			    	android:layout_alignParentBottom="true"
+			    	android:layout_margin="16dp"
+			    	android:text="掌上校园App使用手册"
+			    	android:textColor="@color/white"
+			    	android:textSize="18sp"
+			    	android:lineSpacingMultiplier="1.1"
+			        />
+		    </RelativeLayout>
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_margin="16dp"
+		        >
+		        <TextView 
+		            android:id="@id/name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:text="掌上校园APP"
+		            android:textColor="@color/secondary_text"
+		            />
+		        <TextView 
+		            android:id="@id/time"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:text="2015-10-11 23:05:09"
+		            android:textColor="@color/secondary_text"
+		            />
+		    </RelativeLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

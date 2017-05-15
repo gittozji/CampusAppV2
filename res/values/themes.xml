@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 大主题 -->
+
+<resources>
+    <style name="ActivityTheme_Light" parent="android:Theme.Holo.Light.NoActionBar">
+	    <item name="android:windowAnimationStyle">@style/ActivityInOutAnimation</item> 
+	    <item name="android:windowEnableSplitTouch">false</item>
+	    <item name="android:splitMotionEvents">false</item>
+	</style>
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- include到activity_navigation文件的子布局，是为滑动菜单布局 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+		    android:layout_height="150dp"
+		    android:orientation="vertical"
+		    android:background="@drawable/menu_back_small" >
+			
+            <RelativeLayout 
+                android:id="@id/mine"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/dynamic_trade_menu_item" >
+                
+	            <ImageView
+	                android:id="@id/icon"
+	                android:layout_width="25dp"
+	                android:layout_height="25dp"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="16dp"
+	                android:scaleType="centerCrop"
+	                android:src="@drawable/icon" />
+	
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@id/icon"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="25dp"
+	                android:text="我的微店"
+	                android:textColor="@color/white"
+	                android:textSize="12sp" />
+			</RelativeLayout>
+        </RelativeLayout>
+            
+		<RelativeLayout
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dynamic_trade_menu_item" >
+
+            <ImageView
+                android:id="@+id/two"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon_send" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/two"
+                android:text="发布"
+                android:textSize="16sp"
+                android:textColor="@color/secondary_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/carts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dynamic_trade_menu_item" >
+
+            <ImageView
+                android:id="@+id/three"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon_cart" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/three"
+                android:text="购物车"
+                android:textSize="16sp"
+                android:textColor="@color/secondary_text" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/browse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dynamic_trade_menu_item" >
+
+            <ImageView
+                android:id="@+id/four"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon_browse" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/four"
+                android:text="商品浏览"
+                android:textSize="16sp"
+                android:textColor="@color/secondary_text" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/browse2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dynamic_trade_menu_item" >
+
+            <ImageView
+                android:id="@+id/four2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon_news" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/four2"
+                android:text="求购浏览"
+                android:textSize="16sp"
+                android:textColor="@color/secondary_text" />
+        </RelativeLayout>
+
+       	<RelativeLayout
+       	    android:id="@id/seek"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/dynamic_text_seek_back" >
+
+            <ImageView
+                android:id="@id/five"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_seek" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/five"
+                android:text="条件搜索"
+                android:textSize="16sp"
+                android:textColor="#aaaaaa" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

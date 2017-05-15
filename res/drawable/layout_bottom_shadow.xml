@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<!-- TradeGoodsIssueFragment中的发送、取消的父布局背景 -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >  
+    <!-- layout background -->  
+    <item>  
+        <!-- show rectangle area -->  
+        <shape android:shape="rectangle" >  
+            <gradient  
+                android:angle="270"  
+                android:startColor="#22FFFFFF"  
+                android:centerColor="#55000000" />  
+        </shape>  
+    </item>  
+    <!-- layout foreground -->  
+    <item  
+        android:top="10dp">  
+        <!-- show rectangle area -->  
+        <shape android:shape="rectangle" >  
+            <solid android:color="#FFFFFF" />  
+        </shape>  
+    </item>  
+</layer-list> 

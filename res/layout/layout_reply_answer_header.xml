@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 问答头部布局 -->
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"   
+	android:layout_width="match_parent"
+	android:background="@color/parens_back"
+	android:paddingBottom="10dp"
+    >
+    <!-- requestFocus标签和focusable、focusableInTouchMode属性是取消editText自动获取焦点 -->
+	<RelativeLayout     
+		android:layout_height="match_parent"   
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:focusable="true"
+		android:focusableInTouchMode="true" >
+		<requestFocus />
+		<!-- 标题 -->
+		<RelativeLayout 
+		    android:id="@id/two"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingBottom="80dp"
+		    android:background="@color/primary"
+		    >
+		<TextView 
+	        android:id="@id/title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginBottom="10dp"
+	        android:textSize="20sp"
+	        android:textColor="@color/white"
+	        android:background="@color/primary"
+	        />
+		</RelativeLayout>
+		<!-- 详细描述 -->
+		<LinearLayout   
+		    android:id="@id/three"
+			android:layout_height="wrap_content"   
+			android:layout_width="match_parent"
+			android:layout_below="@id/two"
+			android:orientation="vertical"
+			android:padding="1dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginBottom="10dp"
+			android:layout_marginTop="-60dp"
+			android:background="@drawable/cardback_pro"
+			>  
+			<RelativeLayout
+			    android:id="@id/users_show_layout"
+			    android:layout_height="30dp"   
+				android:layout_width="match_parent"
+				android:layout_marginTop="9dp"
+				android:layout_marginLeft="9dp"
+				android:layout_marginRight="9dp"
+			    >
+			    <TextView 
+			        android:id="@id/one"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="10dp"
+			        android:maxLines="2"
+			        android:ellipsize="end"
+			        android:textSize="12sp"
+			        android:textColor="@color/primary"
+			        android:text="问题简述:"
+			        />
+		
+			</RelativeLayout>
+			<RelativeLayout 
+			    android:id="@id/layout_menu"
+			    android:layout_height="wrap_content"   
+				android:layout_width="match_parent"
+				android:layout_marginLeft="9dp"
+				android:layout_marginRight="9dp"
+				android:layout_marginBottom="9dp"
+				>
+			    <TextView 
+			        android:id="@id/content"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:background="@null"
+				    android:textSize="16sp"
+				    android:hint="......"
+				    android:lineSpacingMultiplier="1.1"
+			        />
+			</RelativeLayout>
+			<com.zjcql.rebuildview.GridViewPro
+		       android:id="@id/grid"
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_marginLeft="1dp"
+		       android:layout_marginRight="1dp"
+		       android:layout_marginBottom="4dp"
+		       android:numColumns="3"
+		       android:verticalSpacing="1dp"
+		    android:scrollbars="none"/>
+		</LinearLayout>
+		<TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/three"
+	        android:layout_marginLeft="20dp"
+	        android:maxLines="2"
+	        android:ellipsize="end"
+	        android:textSize="12sp"
+	        android:textColor="@color/primary"
+	        android:text="参考答案:"
+	        />
+	</RelativeLayout>
+</RelativeLayout>

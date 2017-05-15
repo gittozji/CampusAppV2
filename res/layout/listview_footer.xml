@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- reSwipRefreshLayout的上拉加载布局 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/parens_back"
+    android:gravity="center"
+    android:paddingBottom="8dip"
+    android:paddingTop="5dip" >
+    <com.zjcql.rebuildview.CircularProgress 
+        android:id="@id/load_progress"
+        android:indeterminateDrawable="@drawable/progressbar"
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+		android:indeterminateOnly="true"
+		android:indeterminateBehavior="repeat"
+        android:layout_centerInParent="true"
+        android:indeterminate="true" />
+
+    <!-- 暂且隐藏该TextView -->
+    <TextView
+        android:id="@id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:text="没有更多内容"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp" />
+
+</RelativeLayout>

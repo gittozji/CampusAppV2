@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- EditFloatingButton背景 -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" >
+        <bitmap android:src="@drawable/edit_false_shadow"/>
+    </item>
+    <item android:state_pressed="true" >
+        <bitmap android:src="@drawable/edit_true_shadow"/>
+    </item>
+</selector>

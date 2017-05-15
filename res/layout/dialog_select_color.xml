@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 选择颜色的布局 -->
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="16dp" >
+	<TextView 
+	    android:id="@id/title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="选择颜色"
+	    android:textSize="18sp"
+	    android:textColor="@color/primary_text"
+	    />
+	<GridView 
+	    android:id="@id/grid"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="16dp"
+	    android:layout_marginBottom="16dp"
+	    android:verticalSpacing="1pt"
+	    android:horizontalSpacing="1pt"
+	    android:numColumns="4"
+	    android:gravity="center"
+	    android:listSelector="@null"
+	    />
+</LinearLayout>
